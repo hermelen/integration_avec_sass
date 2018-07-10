@@ -1,3 +1,4 @@
 /node_modules
 /share
 package-lock.json
+/.sass-cache
