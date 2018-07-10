@@ -1,43 +1,60 @@
-div.container {
-  div.row {
-    div.top-nav {
-      nav.navbar.navbar-expand-lg {
-        background-color: #3097d1;
-        a.navbar-brand {
-          img {
-            max-width: 25%;
+$blue: #007bff;
+
+body {
+  background-color: #f5f8fa;
+
+  div.container {
+    div.row {
+      div.top-nav {
+        nav.navbar.navbar-expand-lg {
+          background-color: #3097d1;
+
+          a.navbar-brand {
+            img {
+              max-width: 25%;
+            }
           }
         }
       }
-    }
-    div.layout-div {
-      aside.left-bar {
-        min-height: 500px;
-        background-color: blue;
-        div.card-body {
+
+      div.layout-div {
+        aside.left-bar {
+          min-height: 500px;
+          background-color: blue;
+
+          div.card-body {
             ul {
-                padding-left: 0;
-                li{
-                    list-style: none;
-                    i{
-                        width: 2em;
-                    }
+              padding-left: 0;
+
+              li {
+                list-style: none;
+
+                i {
+                  width: 2em;
                 }
+              }
             }
+          }
         }
-      }
-      main.main-content {
-        min-height: 500px;
-        background-color: yellow;
-      }
-      aside.right-bar {
-        min-height: 500px;
-        background-color: red;
+
+        main.main-content {
+          min-height: 500px;
+          background-color: yellow;
+        }
+
+        aside.right-bar {
+          min-height: 500px;
+          background-color: red;
+        }
       }
     }
   }
-}
 
-span{
-    color: blue;
+  span {
+    color: $blue;
+  }
+
+  span.linky-span {
+    font-size: 0.7em;
+  }
 }
