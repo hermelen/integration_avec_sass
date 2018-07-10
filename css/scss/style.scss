@@ -14,6 +14,17 @@ div.container {
       aside.left-bar {
         min-height: 500px;
         background-color: blue;
+        div.card-body {
+            ul {
+                padding-left: 0;
+                li{
+                    list-style: none;
+                    i{
+                        width: 2em;
+                    }
+                }
+            }
+        }
       }
       main.main-content {
         min-height: 500px;
@@ -25,4 +36,8 @@ div.container {
       }
     }
   }
+}
+
+span{
+    color: blue;
 }
