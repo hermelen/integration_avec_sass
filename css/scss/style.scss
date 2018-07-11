@@ -13,6 +13,7 @@ body {
                     nav.navbar.navbar-expand-lg {
                         display: flex;
                         justify-content: flex-end;
+
                         a.navbar-brand {
                             position: absolute;
                             left: 0;
@@ -22,26 +23,30 @@ body {
                                 max-width: 80px;
                             }
                         }
+
                         ul {
-                          display: flex;
-                          justify-content: flex-start;
-                          li {
-                            a {
-                              color: rgba(255, 255, 255, 0.8);
+                            display: flex;
+                            justify-content: flex-start;
+
+                            li {
+                                a {
+                                    color: rgba(255, 255, 255, 0.8);
+                                }
                             }
-                          }
                         }
+
                         form {
-                          a i {
-                            color: rgba(255, 255, 255, 0.8);
-                            margin-left: 1em;
-                            font-size: 1.5em;
-                            transform: rotate(-20deg);
-                          }
-                          img {
-                            max-width: 3em;
-                            margin-left: 2em;
-                          }
+                            a i {
+                                color: rgba(255, 255, 255, 0.8);
+                                margin-left: 1em;
+                                font-size: 1.5em;
+                                transform: rotate(-20deg);
+                            }
+
+                            img {
+                                max-width: 3em;
+                                margin-left: 2em;
+                            }
                         }
                     }
                 }
@@ -52,25 +57,30 @@ body {
     div.container {
         div.row {
             div.layout-div {
-                aside.left-bar, aside.right-bar, main.main-content {
+                aside.left-bar,
+                aside.right-bar,
+                main.main-content {
                     min-height: 500px;
                     // background-color: blue;
                     h6 {
-                      font-size: 0.9rem;
-                      font-weight: bold;
+                        font-size: 0.9rem;
+                        font-weight: bold;
                     }
-                    div.flexible {
-                      display: flex;
-                      justify-content: space-between;
 
+                    div.flexible {
+                        display: flex;
+                        justify-content: space-between;
                     }
+
                     div.comment-row {
-                      padding-top: 1em;
-                      padding-bottom: 1em;
+                        padding-top: 1em;
+                        padding-bottom: 1em;
                     }
+
                     div.card-m-top {
-                      margin-top: 2em;
+                        margin-top: 2em;
                     }
+
                     div.card-body {
                         ul {
                             padding-left: 0;
@@ -91,10 +101,15 @@ body {
                     // background-color: yellow;
                     div.radius-top {
                         border-radius: 3px 3px 0 0;
-                        border-bottom: 0;
                     }
+
+                    div.no-radius {
+                        border-top: 0;
+                    }
+
                     div.radius-bottom {
                         border-radius: 0 0 3px 3px;
+                        border-top: 0;
                     }
                 }
 
@@ -109,7 +124,6 @@ body {
     span {
         color: $blue;
     }
-
     @mixin username($color) {
         color: $color;
         opacity: 0.8;
@@ -123,13 +137,16 @@ body {
         font-size: 0.7em;
     }
 
-    div.img_x_2_container {
-      position: relative;
-      margin-bottom: 15%;
+    .camera-span {
+        background-color: white;
     }
 
-    img#bg_img {
+    div.img_x_2_container {
+        position: relative;
+        margin-bottom: 15%;
     }
+
+    img#bg_img {}
 
     img#img_profil {
         position: absolute;
@@ -137,32 +154,37 @@ body {
         left: 33%;
         border: 2px solid white;
         top: 75%;
-
     }
 
-    h5{
+    h5 {
         font-weight: bold;
         font-size: 1rem;
     }
 
-    p,h4,h5,h6{
+    h4,
+    h5,
+    h6,
+    p {
         color: #536570;
     }
 
     .btn.border-primary {
         font-size: 0.8rem;
     }
-}
 
-@media screen and(min-width: 960px){
+    p.time {
+        color: grey;
+        opacity: 0.6;
+    }
+}
+// @media screen and(min-width: 960px) {
+@media screen and(min-width: 992px) {
     body header div.container div.row div.top-nav nav.navbar.navbar-expand-lg a.navbar-brand {
         position: static;
     }
 }
-
-@media screen and(min-width:768px)and(max-width:991px){
-     .btn-link:nth-child(2){
-         padding: 0.375rem 0;
-
-     }
+@media screen and(min-width:768px)and(max-width:991px) {
+    .btn-link:nth-child(2) {
+        padding: 0.375rem 0;
+    }
 }
