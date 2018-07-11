@@ -25,13 +25,14 @@ body {
     div.container {
         div.row {
             div.layout-div {
-                aside.left-bar, aside.right-bar {
+                aside.left-bar, aside.right-bar, main.main-content {
                     min-height: 500px;
                     background-color: blue;
 
                     div.card-body {
                         h6 {
                             font-size: 0.9rem;
+                            font-weight: bold;
                         }
 
                         ul {
@@ -51,20 +52,23 @@ body {
                 main.main-content {
                     min-height: 500px;
                     background-color: yellow;
+                    div.radius-top {
+                        border-radius: 3px 3px 0 0;
+                        border-bottom: 0;
+                    }
+                    div.radius-bottom {
+                        border-radius: 0 0 3px 3px;
+                        div.flexible {
+                            display: flex;
+                            justify-content: space-between;
+
+                        }
+                    }
                 }
 
                 aside.right-bar {
                     min-height: 500px;
                     background-color: red;
-                }
-                main.main-content {
-                  div.radius-top {
-                    border-radius: 3px 3px 0 0;
-                    border-bottom: 0;
-                  }
-                  div.radius-bottom {
-                    border-radius: 0 0 3px 3px;
-                  }
                 }
             }
         }
@@ -86,4 +90,6 @@ body {
     span.linky-span {
         font-size: 0.7em;
     }
+
+
 }
