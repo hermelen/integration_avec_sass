@@ -11,7 +11,13 @@ body {
             div.row {
                 div.top-nav {
                     nav.navbar.navbar-expand-lg {
+                        display: flex;
+                        justify-content: flex-end;
                         a.navbar-brand {
+                            position: absolute;
+                            left: 0;
+                            top: 0.4em;
+
                             img {
                                 max-width: 80px;
                             }
@@ -28,7 +34,9 @@ body {
                         form {
                           a i {
                             color: rgba(255, 255, 255, 0.8);
-                            margin-left: 2em;
+                            margin-left: 1em;
+                            font-size: 1.5em;
+                            transform: rotate(-20deg);
                           }
                           img {
                             max-width: 3em;
@@ -115,4 +123,25 @@ body {
         font-size: 0.7em;
     }
 
+    img#bg_img {
+        position: relative;
+        padding-bottom: 2rem;
+    }
+
+    img#img_profil {
+        position: absolute;
+        width: 34%;
+        left: 33%;
+        border: 2px solid white;
+        top: 30%;
+
+    }
+
+}
+
+@media screen and(min-width: 960px){
+    body header div.container div.row div.top-nav nav.navbar.navbar-expand-lg a.navbar-brand {
+        position: relative;
+
+    }
 }

@@ -19,6 +19,7 @@
 
           <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="img/brand-white.png" alt="logo"></a>
+            <a href=""><i class="fas fa-search d-block d-md-none"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,9 +40,9 @@
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <a href="#"><i class="fas fa-bell"></i></a>
-                <img class="img-fluid rounded-circle" src="https://picsum.photos/100/?random" alt="">
+                <input class="form-control mr-sm-2 d-none d-md-block" type="search" placeholder="Search" aria-label="Search">
+                <a href="#"><i class="fas fa-bell d-none d-md-block"></i></a>
+                <img class="img-fluid rounded-circle d-none d-md-block" src="https://picsum.photos/100/?random" alt="">
               </form>
             </div>
           </nav>
@@ -54,11 +55,12 @@
       <div class="layout-div col-md-3">
         <aside class="left-bar">
           <div class="card card-m-top">
-            <img class="card-img-top" src="https://picsum.photos/300/200/?random" alt="Card image cap">
+            <img class="card-img-top" src="https://picsum.photos/300/200/?random" alt="Card image cap" id="bg_img">
+            <img id="img_profil" src="https://picsum.photos/100/?random" class="rounded-circle img-fluid" alt="">
             <div class="card-body row">
               <h5 class="card-title mx-auto font-weight-bold">Dave Gamache</h5>
               <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="friends col-6 text-center">
+              <div class="friends col-6 text-center border-right">
                 <p>Friends</p>
                 <p>12M</p>
               </div>
@@ -85,22 +87,22 @@
               <h5 class="card-title">Photos &middot; <span class="linky-span">Edit</span></h5>
             </div>
             <div class="row no-gutters p-2">
-              <div class="col-md-6 p-1">
+              <div class="col-4 col-md-6 p-1">
                 <img class="img-fluid" src="https://picsum.photos/200/?random" alt="">
               </div>
-              <div class="col-md-6 p-1">
+              <div class="col-4 col-md-6 p-1">
                 <img src="https://picsum.photos/200/?random" class="img-fluid" alt="">
               </div>
-              <div class="col-md-6 p-1">
+              <div class="col-4 col-md-6 p-1">
                 <img class="img-fluid" src="https://picsum.photos/200/?random" alt="">
               </div>
-              <div class="col-md-6 p-1">
+              <div class="col-4 col-md-6 p-1">
                 <img class="img-fluid" src="https://picsum.photos/200/?random" alt="">
               </div>
-              <div class="col-md-6 p-1">
+              <div class="col-4 col-md-6 p-1">
                 <img class="img-fluid" src="https://picsum.photos/200/?random" alt="">
               </div>
-              <div class="col-md-6 p-1">
+              <div class="col-4 col-md-6 p-1">
                 <img class="img-fluid" src="https://picsum.photos/200/?random" alt="">
               </div>
             </div>
@@ -121,8 +123,8 @@
           </div>
           <div class="container card pt-3 rounded-0">
             <div class="row">
-              <div class="col-md-2">
-                <img src="https://picsum.photos/100/?random" alt="Dave" class="img-fluid rounded-circle">
+              <div class="col-md-2 pb-2 text-center pb-2 text-center">
+                <img src="https://picsum.photos/100/?random" alt="Dave" class="img-fluid  rounded-circle">
               </div>
               <div class="col-md-10">
                 <div class="flexible">
@@ -146,7 +148,7 @@
                   </div>
                 </div>
                 <div class="row comment-row">
-                  <div class="col-2">
+                  <div class="col-md-2 pb-2 text-center">
                     <img src="https://picsum.photos/100/?random" alt="Dave" class="img-fluid rounded-circle">
                   </div>
                   <div class="col-10">
@@ -156,7 +158,7 @@
                   </div>
                 </div>
                 <div class="row comment-row">
-                  <div class="col-2">
+                  <div class="col-md-2 pb-2 text-center">
                     <img src="https://picsum.photos/100/?random" alt="Dave" class="img-fluid rounded-circle">
                   </div>
                   <div class="col-10">
@@ -169,7 +171,7 @@
           </div>
           <div class="container card pt-3 rounded-0">
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-2 pb-2 text-center">
                 <img src="https://picsum.photos/100/?random" alt="Dave" class="img-fluid rounded-circle">
               </div>
               <div class="col-md-10">
@@ -184,7 +186,7 @@
           </div>
           <div class="container card pt-3 radius-bottom">
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-2 pb-2 text-center">
                 <img src="https://picsum.photos/100/?random" alt="Dave" class="img-fluid rounded-circle">
               </div>
               <div class="col-md-10">
@@ -196,7 +198,7 @@
                   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <img src="https://picsum.photos/600/?random" alt="Dave" class="img-fluid">
                   <div class="row comment-row">
-                    <div class="col-2">
+                    <div class="col-md-2 pb-2 text-center">
                       <img src="https://picsum.photos/100/?random" alt="Dave" class="img-fluid rounded-circle">
                     </div>
                     <div class="col-10">
@@ -229,17 +231,17 @@
             <div class="card-body">
               <h5 class="card-title">Likes &middot; <span class="linky-span">View All</span></h5>
               <div class="row">
-                <div class="col-md-5 pb-3">
+                <div class="col-5 pb-3">
                   <img src="https://picsum.photos/100/?random" alt="" class="img-fluid rounded-circle">
                 </div>
-                <div class="col-md-7 pl-0 pr-0">
+                <div class="col-7 pl-0 pr-0">
                   <h6>Jacob Thonton <span class="user">@fat</span></h6>
                   <a href="#" class="btn btn-link border-primary"><i class="fas fa-user-plus"></i>Follow</a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-5">
                   <img class="img-fluid rounded-circle" src="https://picsum.photos/100/?random" alt="">
                 </div>
-                <div class="col-md-7 pl-0 pr-0">
+                <div class="col-7 pl-0 pr-0">
                   <h6>Mark Otto <span class="user">@mdo</span></h6>
                   <a href="#" class="btn btn-link border-primary"><i class="fas fa-user-plus"></i>Follow</a>
                 </div>
