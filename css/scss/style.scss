@@ -13,8 +13,27 @@ body {
                     nav.navbar.navbar-expand-lg {
                         a.navbar-brand {
                             img {
-                                max-width: 25%;
+                                max-width: 80px;
                             }
+                        }
+                        ul {
+                          display: flex;
+                          justify-content: flex-start;
+                          li {
+                            a {
+                              color: rgba(255, 255, 255, 0.8);
+                            }
+                          }
+                        }
+                        form {
+                          a i {
+                            color: rgba(255, 255, 255, 0.8);
+                            margin-left: 2em;
+                          }
+                          img {
+                            max-width: 3em;
+                            margin-left: 2em;
+                          }
                         }
                     }
                 }
@@ -27,14 +46,24 @@ body {
             div.layout-div {
                 aside.left-bar, aside.right-bar, main.main-content {
                     min-height: 500px;
-                    background-color: blue;
+                    // background-color: blue;
+                    h6 {
+                      font-size: 0.9rem;
+                      font-weight: bold;
+                    }
+                    div.flexible {
+                      display: flex;
+                      justify-content: space-between;
 
+                    }
+                    div.comment-row {
+                      padding-top: 1em;
+                      padding-bottom: 1em;
+                    }
+                    div.card-m-top {
+                      margin-top: 2em;
+                    }
                     div.card-body {
-                        h6 {
-                            font-size: 0.9rem;
-                            font-weight: bold;
-                        }
-
                         ul {
                             padding-left: 0;
 
@@ -51,24 +80,19 @@ body {
 
                 main.main-content {
                     min-height: 500px;
-                    background-color: yellow;
+                    // background-color: yellow;
                     div.radius-top {
                         border-radius: 3px 3px 0 0;
                         border-bottom: 0;
                     }
                     div.radius-bottom {
                         border-radius: 0 0 3px 3px;
-                        div.flexible {
-                            display: flex;
-                            justify-content: space-between;
-
-                        }
                     }
                 }
 
                 aside.right-bar {
                     min-height: 500px;
-                    background-color: red;
+                    // background-color: red;
                 }
             }
         }
@@ -90,6 +114,5 @@ body {
     span.linky-span {
         font-size: 0.7em;
     }
-
 
 }
