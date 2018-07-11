@@ -123,9 +123,12 @@ body {
         font-size: 0.7em;
     }
 
+    div.img_x_2_container {
+      position: relative;
+      margin-bottom: 15%;
+    }
+
     img#bg_img {
-        position: relative;
-        padding-bottom: 2rem;
     }
 
     img#img_profil {
@@ -133,9 +136,10 @@ body {
         width: 34%;
         left: 33%;
         border: 2px solid white;
-        top: 30%;
+        top: 75%;
 
     }
+
 
 }
 
