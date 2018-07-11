@@ -57,6 +57,15 @@ body {
                     min-height: 500px;
                     background-color: red;
                 }
+                main.main-content {
+                  div.radius-top {
+                    border-radius: 3px 3px 0 0;
+                    border-bottom: 0;
+                  }
+                  div.radius-bottom {
+                    border-radius: 0 0 3px 3px;
+                  }
+                }
             }
         }
     }
